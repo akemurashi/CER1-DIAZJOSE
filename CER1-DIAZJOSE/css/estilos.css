@@ -1,0 +1,67 @@
+/* General styles */
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding-top: 56px; /* Espacio para el navbar fijo */
+}
+
+/* Navbar */
+.navbar {
+    background-color: #85d4b7;
+    width: 100%;
+    height: 80px;
+}
+#Inicio {
+    position: relative;
+    overflow: hidden; /* Asegura que el fondo no sobresalga */
+    min-height: 100vh; /* La sección ocupará al menos el 100% de la altura de la ventana */
+    display: flex; /* Centra el contenido */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    text-align: center; /* Centra el texto */
+    padding: 20px; /* Espaciado interno */
+    box-sizing: border-box; /* Incluye el padding en el cálculo del tamaño */
+    z-index: 1; /* Asegura que el contenido esté por encima del fondo */
+}
+
+#Inicio::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../img/fotoInicio.jpg') no-repeat center center/cover;
+    filter: blur(5px);
+    z-index: 0; /* El fondo debe estar detrás del contenido */
+}
+#Sobre_mi {
+    position: relative;
+    overflow: hidden; /* Asegura que el fondo no sobresalga */
+}
+
+#Sobre_mi::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../img/fondo-sobre-mi.jpg') no-repeat center center/cover;
+    filter: blur(5px);
+    z-index: 0;
+}
+
+#Sobre_mi .text-container, 
+#Sobre_mi img {
+    position: relative;
+    z-index: 1; /* Asegura que el contenido esté por encima del fondo */
+}
+.card {
+    border: 2px solid #85d4b7; /* Borde con color personalizado */
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    width: 60%; /* Ajusta el ancho de la tarjeta */
+    margin: 0 auto; /* Centra la tarjeta horizontalmente */
+    padding: 20px; /* Ajusta el espacio interno */
+}
