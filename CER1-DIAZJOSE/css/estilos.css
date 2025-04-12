@@ -65,3 +65,80 @@ body {
     margin: 0 auto; /* Centra la tarjeta horizontalmente */
     padding: 20px; /* Ajusta el espacio interno */
 }
+#Contacto {
+    background-color: #f8f8f8; /* Fondo claro */
+    color: black;
+    padding: 50px 10%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+#Contacto .logo-container h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#Contacto .logo-container p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+#Contacto .list-inline {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+#Contacto .list-inline-item {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+#Contacto .list-inline-item a {
+    font-size: 24px;
+    color: black;
+    text-decoration: none;
+}
+
+#Contacto .list-inline-item a:hover {
+    color: #85d4b7;
+}
+
+#Contacto .contact-form h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+#Contacto .contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#Contacto .contact-form input,
+#Contacto .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+#Contacto .contact-form button {
+    background-color: #85d4b7;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#Contacto .contact-form button:hover {
+    background-color: #6dccaa;
+}
