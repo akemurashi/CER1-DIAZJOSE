@@ -10,11 +10,13 @@ body {
     background-color: #34dc9e;
     width: 100%;
     height: 80px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave debajo del navbar */
+    z-index: 10; /* Asegura que el navbar esté por encima del contenido */
 }
 /* modificaciones css para cada section y sus partes relacionadas */
 #Inicio {
     position: relative;
-    overflow: hidden; /* Asegura que el fondo no sobresalga */
+    overflow: hidden; /* Asegura que la imagen fondo no sobresalga */
     min-height: 100vh;
     display: flex; 
     justify-content: center;
@@ -34,7 +36,7 @@ body {
     height: 100%;
     background: url('../img/fotoInicio.jpg') no-repeat center center/cover; /* Se entrega la ruta de la imagen a usar de fondo */
     filter: blur(5px);
-    z-index: 0; /* El fondo debe estar detrás del contenido */
+    z-index: 0; /* esto permite que el fondo este detras del contenido */
 }
 #Sobre_mi {
     position: relative;
@@ -75,6 +77,72 @@ body {
     width: 60%; 
     margin: 0 auto; 
     padding: 20px; 
+}
+#Carrusel {
+    position: relative;
+    overflow: hidden;
+    min-height: 100vh; 
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-start; 
+    align-items: center; 
+    text-align: center; 
+    padding: 100px 20px 20px; 
+}
+
+
+#Carrusel::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; 
+    background: url('../img/fondo-carrusel.jpg') no-repeat center center;
+    background-size: cover; 
+    filter: blur(5px);
+    z-index: -1;
+}
+.carousel-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-image {
+    width: 100%;
+    display: none;
+}
+
+.carousel-image.active {
+    display: block;
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.carousel-btn.prev {
+    left: 10px;
+}
+
+.carousel-btn.next {
+    right: 10px;
 }
 #Servicios {
     position: relative;
@@ -189,4 +257,9 @@ body {
 
 #Contacto .contact-form button:hover {
     background-color: #6dccaa;
+}
+footer {
+    background-color: #e2e2e2; 
+    padding: 20px;
+    text-align: left;
 }

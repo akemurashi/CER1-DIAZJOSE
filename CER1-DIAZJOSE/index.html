@@ -11,7 +11,7 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#"img src="img/logo.svg">Clases con Rita</a>
+            <a class="navbar-brand" href="#">Clases con Rita</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -19,7 +19,7 @@
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link active" href="#Inicio">Inicio</a></li>
                     <li class="nav-item"><a class="nav-link" href="#Sobre_mi">Sobre mi</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#Servicios">servicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#Servicios">Servicios</a></li>
                     <li class="nav-item"><a class="nav-link" href="#Contacto">Contacto</a></li>
                 </ul>
             </div>
@@ -48,9 +48,10 @@
                             <h1 class="card-title text-primary">Sobre mi</h1>
                             <h3 class="card-subtitle mb-3 text-muted">Trayectoria Profesional</h3>
                             <p class="card-text text-justify">
-                                Egresada de la Universidad de La Serena, posteriormente realizando un postitulo especializado en Historia.
+                                Mi nombre es Rita Jofré soy egresada de la Universidad de La Serena, posteriormente realice un postitulo especializado en Historia.
                                 <br>
-                                Trabaje egresada de la Universidad de La Serena, posteriormente se especializa en Historia desde 1982 hasta 1984.
+                                Trabaje en la Escuela Particular N° 93 de Cerrillos de Rapel desde 1982 hasta 1984, donde me desempeñe como profesora de educacion basica.
+                                <br>
                                 Desde 1985 hasta el año 2000, me desempeñe en la localidad de Las Ramadas de Tulahuén, donde realiza funciones de profesora Encargada de Escuela.
                                 <br>
                                 Desde 2000 a febrero de 2025, Trabaje en el Colegio Rio Grande, donde me desempeñe como profesora de Historia y de Orientacion.
@@ -62,83 +63,91 @@
                     <img src="img/foto1.jpg" class="img-fluid rounded">
                 </div>
             </section>
+            <!-- Seccion Carrusel -->
+            <section id="Carrusel" class="row align-items-center text-center">
+                <div class="carousel-container">
+                    <div class="carousel">
+                        <img src="img/fotocarrusel1.jpg" alt="Imagen 1" class="carousel-image active">
+                        <img src="img/fotocarrusel2.jpg" alt="Imagen 2" class="carousel-image">
+                        <img src="img/fotocarrusel3.jpg" alt="Imagen 3" class="carousel-image">
+                        <img src="img/fotocarrusel4.jpg" alt="Imagen 4" class="carousel-image">
+                    </div>
+                    <button class="carousel-btn prev">❮</button>
+                    <button class="carousel-btn next">❯</button>
+                </div>
+            </section>
             <!-- Seccion Servicios -->
-<section id="Servicios" class="row align-items-center text-center">
-    <h2 class="text-center text-primary mb-4">Servicios</h2>
-    <div class="accordion" id="accordionServicios">
-        <!-- Card 1 -->
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="headingOne">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                    Servicio 1: Reforzamiento educativo de primero a cuarto básico
-                </button>
-            </h2>
-            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionServicios">
-                <div class="accordion-body">
-                    Clases personalizadas para estudiantes de primero a cuarto básico, enfocadas en reforzar el aprendizaje de Historia y Lenguaje.
-                    <br>
-                    Metodología didáctica y entretenida, adaptada a las necesidades de cada estudiante.
+            <section id="Servicios" class="row align-items-center text-center">
+                <h2 class="text-center text-primary mb-4">Servicios</h2>
+                <div class="accordion" id="accordionServicios">
+                    <!-- Card 1 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Servicio 1: Reforzamiento educativo de primero a cuarto básico
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionServicios">
+                            <div class="accordion-body">
+                                Clases personalizadas para estudiantes de primero a cuarto básico, enfocadas en reforzar el aprendizaje de Historia y Lenguaje.
+                                <br>
+                                Metodología didáctica y entretenida, adaptada a las necesidades de cada estudiante.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Servicio 2: Tutorías en Historia de quinto a octavo básico
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionServicios">
+                            <div class="accordion-body">
+                                Tutorías personalizadas para estudiantes de quinto a octavo básico, enfocadas en Historia.
+                                <br>
+                                Clases adaptadas a las necesidades de cada estudiante, con un enfoque práctico y dinámico.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Servicio 3: Apoyo en el desarrollo de trabajos y tareas en Lenguaje e Historia
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionServicios">
+                            <div class="accordion-body">
+                                Apoyo en el desarrollo de trabajos y tareas en Lenguaje e Historia para estudiantes de todos los niveles.
+                                <br>
+                                Asesoría personalizada para mejorar la comprensión y el rendimiento académico.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 4 -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFour">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                Servicio 4: apoyo personalizado a estudiantes con necesidades educativas especiales.
+                            </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionServicios">
+                            <div class="accordion-body">
+                                Apoyo personalizado a estudiantes con necesidades educativas especiales, adaptando las clases a sus requerimientos específicos.
+                                <br>
+                                Metodología inclusiva y adaptativa para garantizar el aprendizaje de todos los estudiantes.
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-        <!-- Card 2 -->
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="headingTwo">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    Servicio 2: Tutorías en Historia de quinto a octavo básico
-                </button>
-            </h2>
-            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionServicios">
-                <div class="accordion-body">
-                    Tutorías personalizadas para estudiantes de quinto a octavo básico, enfocadas en Historia.
-                    <br>
-                    Clases adaptadas a las necesidades de cada estudiante, con un enfoque práctico y dinámico.
-                </div>
-            </div>
-        </div>
-        <!-- Card 3 -->
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="headingThree">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    Servicio 3: Apoyo en el desarrollo de trabajos y tareas en Lenguaje e Historia
-                </button>
-            </h2>
-            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionServicios">
-                <div class="accordion-body">
-                    Apoyo en el desarrollo de trabajos y tareas en Lenguaje e Historia para estudiantes de todos los niveles.
-                    <br>
-                    Asesoría personalizada para mejorar la comprensión y el rendimiento académico.
-                </div>
-            </div>
-        </div>
-        <!-- Card 4 -->
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="headingFour">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                    Servicio 4: apoyo personalizado a estudiantes con necesidades educativas especiales.
-                </button>
-            </h2>
-            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionServicios">
-                <div class="accordion-body">
-                    Apoyo personalizado a estudiantes con necesidades educativas especiales, adaptando las clases a sus requerimientos específicos.
-                    <br>
-                    Metodología inclusiva y adaptativa para garantizar el aprendizaje de todos los estudiantes.
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+            </section>
             <!-- Seccion de Contacto -->
             <section id="Contacto" class="row align-items-center text-center">
                 <div class="col-md-6">
                     <div class="logo-container">
                         <h1>Clases con Rita</h1>
                         <p>Aprendizaje | Reforzamiento | Apoyo | Didactica</p>
-                        <ul class="list-inline">
-                            <li class="list-inline-item"><a href="#"><i class="fab fa-facebook"></i></a></li>
-                            <li class="list-inline-item"><a href="#"><i class="fab fa-google"></i></a></li>
-                            <li class="list-inline-item"><a href="#"><i class="fab fa-instagram"></i></a></li>
-                        </ul>
                     </div>
                 </div>
                 <div class="col-md-6">
@@ -157,11 +166,12 @@
         <footer>
             <p>hecho por Jose Diaz
               <br>
-                todos los derechos reservados
+                taller de Lenguajes de Programacion
               <br>
-              2025
+              2025-1
             </p>
         </footer>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script> <!-- Bootstrap JS, tuve que agregarlo para que los accordions de servicios funcionaran -->
+        <script src="js/carrusel.js"></script><!--JS del carrusel de imagenes-->
 </body>
 </html>
