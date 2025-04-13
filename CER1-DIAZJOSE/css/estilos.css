@@ -1,4 +1,4 @@
-/* General styles */
+/* body */
 body {
     font-family: 'Raleway', sans-serif;
     margin: 0;
@@ -7,20 +7,21 @@ body {
 
 /* Navbar */
 .navbar {
-    background-color: #85d4b7;
+    background-color: #34dc9e;
     width: 100%;
     height: 80px;
 }
+/* modificaciones css para cada section y sus partes relacionadas */
 #Inicio {
     position: relative;
     overflow: hidden; /* Asegura que el fondo no sobresalga */
-    min-height: 100vh; /* La sección ocupará al menos el 100% de la altura de la ventana */
-    display: flex; /* Centra el contenido */
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center; /* Centra verticalmente */
-    text-align: center; /* Centra el texto */
-    padding: 20px; /* Espaciado interno */
-    box-sizing: border-box; /* Incluye el padding en el cálculo del tamaño */
+    min-height: 100vh;
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    text-align: center; 
+    padding: 20px;
+    box-sizing: border-box;
     z-index: 1; /* Asegura que el contenido esté por encima del fondo */
 }
 
@@ -31,13 +32,13 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: url('../img/fotoInicio.jpg') no-repeat center center/cover;
+    background: url('../img/fotoInicio.jpg') no-repeat center center/cover; /* Se entrega la ruta de la imagen a usar de fondo */
     filter: blur(5px);
     z-index: 0; /* El fondo debe estar detrás del contenido */
 }
 #Sobre_mi {
     position: relative;
-    overflow: hidden; /* Asegura que el fondo no sobresalga */
+    overflow: hidden;
 }
 
 #Sobre_mi::before {
@@ -51,22 +52,69 @@ body {
     filter: blur(5px);
     z-index: 0;
 }
+#Sobre_mi .col-md-6 {
+    padding: 0; 
+    margin: 0; 
+}
 
+#Sobre_mi .col-md-6 img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    display: block; 
+}
 #Sobre_mi .text-container, 
 #Sobre_mi img {
     position: relative;
-    z-index: 1; /* Asegura que el contenido esté por encima del fondo */
+    z-index: 1; 
 }
 .card {
-    border: 2px solid #85d4b7; /* Borde con color personalizado */
-    border-radius: 15px; /* Bordes redondeados */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
-    width: 60%; /* Ajusta el ancho de la tarjeta */
-    margin: 0 auto; /* Centra la tarjeta horizontalmente */
-    padding: 20px; /* Ajusta el espacio interno */
+    border: 2px solid #85d4b7; 
+    border-radius: 15px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    width: 60%; 
+    margin: 0 auto; 
+    padding: 20px; 
+}
+#Servicios {
+    position: relative;
+    overflow: hidden;
+    min-height: 100vh; 
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-start; 
+    align-items: center; 
+    text-align: center; 
+    padding: 100px 20px 20px; 
+}
+
+#Servicios .accordion {
+    flex-grow: 1; 
+    width: 100%; 
+}
+
+#Servicios::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; 
+    background: url('../img/fondo-servicios.jpg') no-repeat center center;
+    background-size: cover; 
+    filter: blur(5px);
+    z-index: -1; /* diferente al z-index de sobre mi porque el valor 0 afecta de manera visualmente negativa al accordion */
+}
+#Servicios h2 {
+    margin-bottom: 30px;
+}
+
+#Servicios .accordion {
+    width: 80%; 
+    max-width: 800px;
 }
 #Contacto {
-    background-color: #f8f8f8; /* Fondo claro */
+    background-color: #f8f8f8; 
     color: black;
     padding: 50px 10%;
     display: flex;

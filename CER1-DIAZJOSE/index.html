@@ -40,6 +40,7 @@
                     </div>
                 </div>
             </section>
+            <!-- Seccion Sobre mi -->
             <section id="Sobre_mi" class="row align-items-center text-center">
                 <div class="col-md-6">
                     <div class="card shadow-lg border-0">
@@ -61,6 +62,73 @@
                     <img src="img/foto1.jpg" class="img-fluid rounded">
                 </div>
             </section>
+            <!-- Seccion Servicios -->
+<section id="Servicios" class="row align-items-center text-center">
+    <h2 class="text-center text-primary mb-4">Servicios</h2>
+    <div class="accordion" id="accordionServicios">
+        <!-- Card 1 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Servicio 1: Reforzamiento educativo de primero a cuarto básico
+                </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionServicios">
+                <div class="accordion-body">
+                    Clases personalizadas para estudiantes de primero a cuarto básico, enfocadas en reforzar el aprendizaje de Historia y Lenguaje.
+                    <br>
+                    Metodología didáctica y entretenida, adaptada a las necesidades de cada estudiante.
+                </div>
+            </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Servicio 2: Tutorías en Historia de quinto a octavo básico
+                </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionServicios">
+                <div class="accordion-body">
+                    Tutorías personalizadas para estudiantes de quinto a octavo básico, enfocadas en Historia.
+                    <br>
+                    Clases adaptadas a las necesidades de cada estudiante, con un enfoque práctico y dinámico.
+                </div>
+            </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Servicio 3: Apoyo en el desarrollo de trabajos y tareas en Lenguaje e Historia
+                </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionServicios">
+                <div class="accordion-body">
+                    Apoyo en el desarrollo de trabajos y tareas en Lenguaje e Historia para estudiantes de todos los niveles.
+                    <br>
+                    Asesoría personalizada para mejorar la comprensión y el rendimiento académico.
+                </div>
+            </div>
+        </div>
+        <!-- Card 4 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFour">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    Servicio 4: apoyo personalizado a estudiantes con necesidades educativas especiales.
+                </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionServicios">
+                <div class="accordion-body">
+                    Apoyo personalizado a estudiantes con necesidades educativas especiales, adaptando las clases a sus requerimientos específicos.
+                    <br>
+                    Metodología inclusiva y adaptativa para garantizar el aprendizaje de todos los estudiantes.
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+            <!-- Seccion de Contacto -->
             <section id="Contacto" class="row align-items-center text-center">
                 <div class="col-md-6">
                     <div class="logo-container">
@@ -75,11 +143,11 @@
                 </div>
                 <div class="col-md-6">
                     <div class="contact-form">
-                        <h3><i class="fas fa-envelope"></i> Contactanos</h3>
+                        <h3><i class="fas fa-envelope"></i> Contacto</h3>
                         <form action="#" method="post">
                             <input type="text" name="name" placeholder="indique su nombre" required>
                             <input type="email" name="email" placeholder="escriba su email" required>
-                            <input type="text" name="motivo" placeholder="indique el motivo de su consulta" required>
+                            <input type="text" name="motivo" placeholder="indique el motivo de su consulta o el servicio que desee contratar" required>
                             <textarea name="message" placeholder="escriba su consulta/mensaje" rows="4" required></textarea>
                             <button type="submit">Enviar</button>
                         </form>
@@ -94,5 +162,6 @@
               2025
             </p>
         </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script> <!-- Bootstrap JS, tuve que agregarlo para que los accordions de servicios funcionaran -->
 </body>
 </html>
