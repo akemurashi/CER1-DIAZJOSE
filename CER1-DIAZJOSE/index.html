@@ -9,7 +9,7 @@
 </head>
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg fixed-top">
+    <nav class="navbar navbar-expand-lg fixed-top"> <!-- fixed-top es lo que permite que la navbar este siempre accesible -->
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Clases con Rita</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -80,7 +80,7 @@
             <section id="Servicios" class="row align-items-center text-center">
                 <h2 class="text-center text-primary mb-4">Servicios</h2>
                 <div class="accordion" id="accordionServicios">
-                    <!-- Card 1 -->
+                    <!-- Acordeon 1 -->
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingOne">
                             <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
@@ -95,7 +95,7 @@
                             </div>
                         </div>
                     </div>
-                    <!-- Card 2 -->
+                    <!-- Acordeon 2, la clase tendra collapsed pues solo queria que se viera el primer boton abierto al inicio-->
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingTwo">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
@@ -110,7 +110,7 @@
                             </div>
                         </div>
                     </div>
-                    <!-- Card 3 -->
+                    <!-- Acordeon 3 -->
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingThree">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
@@ -125,7 +125,7 @@
                             </div>
                         </div>
                     </div>
-                    <!-- Card 4 -->
+                    <!-- Acordeon 4 -->
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingFour">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
@@ -154,7 +154,7 @@
                     <div class="contact-form">
                         <h3><i class="fas fa-envelope"></i> Contacto</h3>
                         <form action="#" method="post">
-                            <input type="text" name="name" placeholder="indique su nombre" required>
+                            <input type="text" name="name" placeholder="indique su nombre" required> <!-- los "required" no son realmente necesarios pero el ejemplo que encontre los traia asi que los agregue tambien -->
                             <input type="email" name="email" placeholder="escriba su email" required>
                             <input type="text" name="motivo" placeholder="indique el motivo de su consulta o el servicio que desee contratar" required>
                             <textarea name="message" placeholder="escriba su consulta/mensaje" rows="4" required></textarea>
@@ -171,7 +171,7 @@
               2025-1
             </p>
         </footer>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script> <!-- Bootstrap JS, tuve que agregarlo para que los accordions de servicios funcionaran -->
+        <script src="js/bootstrap.js"></script> <!-- Bootstrap JS, tuve que agregarlo para que los accordions de servicios funcionaran -->
         <script src="js/carrusel.js"></script><!--JS del carrusel de imagenes-->
 </body>
 </html>

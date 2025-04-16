@@ -65,7 +65,7 @@ body {
     object-fit: cover; 
     display: block; 
 }
-#Sobre_mi .text-container, 
+
 #Sobre_mi img {
     position: relative;
     z-index: 1; 
@@ -194,33 +194,6 @@ body {
     font-size: 48px;
     font-weight: bold;
     margin-bottom: 10px;
-}
-
-#Contacto .logo-container p {
-    font-size: 16px;
-    color: #666;
-    margin-bottom: 20px;
-}
-
-#Contacto .list-inline {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-}
-
-#Contacto .list-inline-item {
-    display: inline-block;
-    margin: 0 10px;
-}
-
-#Contacto .list-inline-item a {
-    font-size: 24px;
-    color: black;
-    text-decoration: none;
-}
-
-#Contacto .list-inline-item a:hover {
-    color: #85d4b7;
 }
 
 #Contacto .contact-form h3 {
